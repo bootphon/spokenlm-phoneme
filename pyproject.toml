@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spokenlm-phoneme"
+version = "1.0"
+description = "Improving Spoken Language Modeling with Phoneme Classification: A Simple Fine-tuning Approach"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+dependencies = [
+    "safetensors>=0.4.5",
+    "torch>=2.4.1",
+    "torchaudio>=2.4.1",
+    "accelerate>=0.34.2",
+    "confidence-intervals>=0.0.3",
+    "ipykernel>=6.29.5",
+    "matplotlib>=3.9.2",
+    "numpy>=2.1.1",
+    "pyyaml>=6.0.2",
+    "scikit-learn>=1.5.2",
+    "seaborn>=0.13.2",
+    "soundfile>=0.12.1",
+    "tqdm>=4.66.5",
+    "wandb>=0.18.3",
+    "zerospeech-benchmarks[abxls]>=0.9.4",
+]
+
+[tool.ruff]
+line-length = 119

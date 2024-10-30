@@ -1,0 +1,8 @@
+.envrc
+__pycache__
+*.egg-info
+phonslm.code-workspace
+.venv
+data/
+slm/
+TODO
